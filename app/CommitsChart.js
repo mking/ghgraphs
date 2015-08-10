@@ -9,7 +9,8 @@ class CommitsChart extends React.Component {
   static defaultProps = {
     height: 130,
     xAxisOffset: 40,
-    commitType: 'contributor'
+    commitType: 'contributor',
+    x: 1
   };
 
   componentDidMount() {
