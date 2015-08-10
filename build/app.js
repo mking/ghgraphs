@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d4c91eeac8ecb403cfa2"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "04a4d974b59a2b5645ee"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -39363,7 +39363,8 @@
 	    value: {
 	      height: 130,
 	      xAxisOffset: 40,
-	      commitType: 'contributor'
+	      commitType: 'contributor',
+	      x: 1
 	    },
 	    enumerable: true
 	  }]);
