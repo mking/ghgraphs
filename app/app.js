@@ -1,5 +1,4 @@
 import './app.scss';
-import _ from 'lodash';
 import Promise from 'bluebird';
 import React from 'react';
 import RepoCommits from './RepoCommits';

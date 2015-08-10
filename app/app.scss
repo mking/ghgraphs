@@ -7,43 +7,15 @@ body, button, input, textarea {
   font-family: sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
 }
 
-.axis {
-  &.x {
-    .domain {
-      fill: none;
-      stroke: #eee;
-    }
-
-    .tick {
-      text {
-        fill: #aaa;
-      }
-    }
-  }
-
-  &.y {
-    .tick {
-      text {
-        fill: #ccc;
-      }
-    }
-  }
-
-  .tick {
-    line {
-      stroke: #eee;
-    }
-
-    text {
-      font-size: 10px;
-    }
-  }
-}
-
-.commits {
-  fill: #f17f49;
+#content {
+  height: 100%;
 }

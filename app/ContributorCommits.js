@@ -45,7 +45,11 @@ class ContributorCommits extends React.Component {
           src={contributor.author.avatar}/>
         <div className="contributorCommits-headerText">
           <div className="contributorCommits-login">
-            <a className="contributorCommits-loginLink" href="#">{contributor.author.login}</a>
+            <a
+              className="contributorCommits-loginLink"
+              href={`https://github.com/${contributor.author.login}`}>
+              {contributor.author.login}
+            </a>
           </div>
           <div className="contributorCommits-stats">
             <span className="contributorCommits-statsCommits">
@@ -108,7 +112,7 @@ class ContributorCommits extends React.Component {
       });
     const xAxisG = contentG.append('g');
     xAxisG.attr('transform', `translate(0, ${contentHeight})`)
-      .attr('class', 'axis x')
+      .attr('class', 'contributorCommits-axis x')
       .call(xAxis);
 
     const y = d3.scale.linear()
@@ -122,7 +126,7 @@ class ContributorCommits extends React.Component {
       .tickPadding(-contentWidth / 2)
       .outerTickSize(0);
     const yAxisG = contentG.append('g');
-    yAxisG.attr('class', 'axis y')
+    yAxisG.attr('class', 'contributorCommits-axis y')
       .call(yAxis);
     yAxisG.selectAll('.tick text')
       .style('text-anchor', 'middle');
@@ -134,7 +138,7 @@ class ContributorCommits extends React.Component {
       .interpolate('basis');
     contentG.append('path')
       .attr('d', area(contributor.weeks))
-      .attr('class', 'commits');
+      .attr('class', 'contributorCommits-commits');
   }
 }
 

@@ -3,9 +3,20 @@
 .repoCommits {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   width: 940px;
 
   &-contributor {
     margin: 10px;
+  }
+
+  &-spinner {
+  }
+
+  &-spinnerWrap {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
   }
 }
