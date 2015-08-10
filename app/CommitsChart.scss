@@ -1,0 +1,44 @@
+@import './variables';
+
+.commitsChart {
+  &.repo {
+    .commitsChart {
+      &-axis.y .tick text {
+        fill: $color-tickText;
+      }
+    }
+  }
+
+  &-axis {
+    &.x {
+      .domain {
+        fill: none;
+        stroke: $color-border;
+      }
+
+      .tick {
+        text {
+          fill: $color-tickText;
+        }
+      }
+    }
+
+    &.y {
+      .tick {
+        text {
+          fill: $color-secondary;
+        }
+      }
+    }
+
+    .tick {
+      line {
+        stroke: $color-border;
+      }
+
+      text {
+        font-size: 10px;
+      }
+    }
+  }
+}
