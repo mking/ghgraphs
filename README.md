@@ -17,7 +17,3 @@ Graph Data
 ```
 curl -H 'Accept: application/json' 'https://github.com/Khan/react-components/graphs/contributors-data'
 ```
-
-TODO
----
-- Repo commits graph
