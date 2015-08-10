@@ -14,42 +14,10 @@
     width: 32px;
   }
 
-  &-axis {
-    &.x {
-      .domain {
-        fill: none;
-        stroke: $color-border;
-      }
-
-      .tick {
-        text {
-          fill: $color-tickText;
-        }
-      }
-    }
-
-    &.y {
-      .tick {
-        text {
-          fill: $color-secondary;
-        }
-      }
-    }
-
-    .tick {
-      line {
-        stroke: $color-border;
-      }
-
-      text {
-        font-size: 10px;
-      }
-    }
-  }
-
   &-body {
     background-color: $color-background;
     flex-grow: 1;
+    padding: 10px;
   }
 
   &-commits {

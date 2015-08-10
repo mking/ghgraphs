@@ -2,11 +2,50 @@
 
 .repoCommits {
   display: flex;
-  flex-wrap: wrap;
   height: 100%;
-  width: 940px;
+
+  &-chart {
+    flex-shrink: 0;
+  }
+
+  &-chartWrap {
+    align-items: center;
+    background-color: $color-background;
+    border-radius: 6px;
+    display: flex;
+    flex-shrink: 0;
+    height: 175px;
+    margin: 10px;
+    padding: 0 20px;
+  }
+
+  &-commits {
+    fill: rgba($color-greenArea, 0.5);
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 
   &-contributor {
+    margin: 10px;
+  }
+
+  &-contributors {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  &-dateRange {
+    color: $color-titleText;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &-header {
     margin: 10px;
   }
 
@@ -19,5 +58,11 @@
     display: flex;
     flex-grow: 1;
     justify-content: center;
+  }
+
+  &-subtitle {
+    color: $color-text;
+    font-size: 13px;
+    margin-top: 2px;
   }
 }
