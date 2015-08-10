@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body, button, input, textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#chart {
+  background-color: #f7f7f7;
+}
+
+.axis {
+  &.x {
+    .domain {
+      fill: none;
+      stroke: #eee;
+    }
+
+    .tick {
+      text {
+        fill: #aaa;
+      }
+    }
+  }
+
+  &.y {
+    .tick {
+      text {
+        fill: #ccc;
+      }
+    }
+  }
+
+  .tick {
+    line {
+      stroke: #eee;
+    }
+
+    text {
+      font-size: 10px;
+    }
+  }
+}
+
+.commits {
+  fill: #f17f49;
+}
