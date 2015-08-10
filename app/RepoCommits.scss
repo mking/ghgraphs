@@ -1,0 +1,11 @@
+@import './variables';
+
+.repoCommits {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+
+  &-contributor {
+    margin: 10px;
+  }
+}

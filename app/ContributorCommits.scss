@@ -1,0 +1,78 @@
+@import './variables';
+
+.contributorCommits {
+  border: 1px solid $color-darkBorder;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+
+  &-avatar {
+    border-radius: 3px;
+    flex-shrink: 0;
+    height: 32px;
+    margin-right: 5px;
+    width: 32px;
+  }
+
+  &-body {
+    background-color: #f7f7f7;
+    flex-grow: 1;
+  }
+
+  &-divider {
+    margin: 0 4px;
+  }
+
+  &-header {
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    flex-shrink: 0;
+    padding: 10px;
+  }
+
+  &-headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-login {
+    flex-shrink: 0;
+  }
+
+  &-loginLink {
+    color: $color-blue;
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-rank {
+    color: $color-text;
+    font-size: 13px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  &-stats {
+    color: $color-secondary;
+    flex-shrink: 0;
+    font-size: 12px;
+  }
+
+  &-statsAdded {
+    color: $color-green;
+  }
+
+  &-statsCommits {
+    color: $color-text;
+  }
+
+  &-statsRemoved {
+    color: $color-red;
+  }
+}
